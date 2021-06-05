@@ -299,7 +299,7 @@ section {
     }
 
     &#register {
-        background-image: url("../img/register-bg.png");
+        background-image: url("../img/register-bg-min.png");
         background-position: center;
         background-size: cover;
 
@@ -377,21 +377,21 @@ section {
 
                     &.gold {
                         .star {
-                            background-image: url("/static/img/gold.png");
+                            background-image: url("/static/img/gold-min.png");
                             width: 50px;
                             height: 50px;
                         }
                     }
                     &.silver {
                         .star {
-                            background-image: url("/static/img/silver.png");
+                            background-image: url("/static/img/silver-min.png");
                             width: 40px;
                             height: 40px;
                         }
                     }
                     &.bronze {
                         .star {
-                            background-image: url("/static/img/bronze.png");
+                            background-image: url("/static/img/bronze-min.png");
                             width: 30px;
                             height: 30px;
                         }
