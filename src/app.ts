@@ -1,5 +1,7 @@
 import express ,{ Application } from "express";
 import exphbs from "express-handlebars";
+import helmet from "helmet";
+import compression from "compression";
 import { Route } from "./route";
 
 class App {
@@ -15,6 +17,7 @@ class App {
     private expressConfig = () => {
         this.app.use(express.json())
         this.app.use(express.urlencoded({extended:true}))
+        this.app.use(compression())
     }
 
     private viewEngine = () => {
@@ -28,7 +31,7 @@ class App {
     }
 
     private securityOptions = () => {
-        
+        this.app.use(helmet())
     }
 
     private mongoSetup = () => {
