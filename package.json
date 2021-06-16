@@ -17,12 +17,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
+    "class-transformer": "^0.4.0",
+    "class-transformer-validator": "^0.9.1",
+    "class-validator": "^0.13.1",
+    "compression": "^1.7.4",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.1"
+    "express-handlebars": "^5.2.1",
+    "helmet": "^4.6.0"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/compression": "^1.7.0",
     "@types/express": "^4.17.12",
     "@types/express-handlebars": "^5.3.0",
+    "@types/helmet": "^4.0.0",
     "@types/node": "^15.12.2",
     "ts-node": "^10.0.0",
     "ts-node-dev": "^1.1.6",
