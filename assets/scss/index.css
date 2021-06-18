@@ -382,6 +382,8 @@ section#sponsors .content .flex .s-logo-box {
           justify-content: center;
   position: relative;
   margin: 20px;
+  border: 1px solid;
+  color: var(--text);
 }
 
 @media (max-width: 980px) {
@@ -423,7 +425,12 @@ section#sponsors .content .flex .s-logo-box img {
           filter: grayscale(100%);
 }
 
-section#sponsors .content .flex .s-logo-box .star {
+section#sponsors .content .flex .s-logo-box:hover img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+section#sponsors .content .flex .s-logo-box .star, section#sponsors .content .flex .s-logo-box .info {
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -431,6 +438,8 @@ section#sponsors .content .flex .s-logo-box .star {
           transform: translate(-50%, 50%);
   background-size: cover;
   background-position: center;
+  text-align: center;
+  background-color: var(--bg);
 }
 
 section#sponsors .content .flex .s-logo-box.gold .star {

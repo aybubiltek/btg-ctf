@@ -34,3 +34,8 @@ $(function () {
     }
   });
 });
+
+
+$(".s-logo-box.product .info").html("Ürün Sponsoru");
+$(".s-logo-box.adv .info").html("Reklam Sponsoru");
+$(".s-logo-box.technical .info").html("Teknik Sponsor");
