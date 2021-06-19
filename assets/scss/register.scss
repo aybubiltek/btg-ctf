@@ -82,8 +82,15 @@ body{
                             color: var(--bg);
                             font-weight: 600;
                             cursor: pointer;
+
+                            &.register-btn{
+                                background-color: var(--pink);
+                                color:white;
+                                border-color: var(--pink);
+                            }
                         }
                     }
+                    
                 }
             }
         }
@@ -113,4 +120,8 @@ body{
             display: block;
         }
     }
+}
+
+.hidden{
+    display: none;
 }

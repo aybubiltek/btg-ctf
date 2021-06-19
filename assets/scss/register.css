@@ -532,6 +532,12 @@ body .register-area .form-area form input[type="button"].form-btn, body .registe
   cursor: pointer;
 }
 
+body .register-area .form-area form input[type="button"].form-btn.register-btn, body .register-area .form-area form input[type="submit"].form-btn.register-btn {
+  background-color: var(--pink);
+  color: white;
+  border-color: var(--pink);
+}
+
 .checkbox-s {
   position: relative;
   width: 20px;
@@ -557,5 +563,9 @@ body .register-area .form-area form input[type="button"].form-btn, body .registe
 
 .checkbox-s i.show {
   display: block;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=register.css.map */
