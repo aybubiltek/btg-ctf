@@ -9,6 +9,7 @@ $(".checkbox-s").click(function () {
   $("#accept").click();
   if ($("input#accept").is(":checked")) {
     $(".team-btn-area").removeClass("hidden");
+    $(".reg-btn-area").addClass("hidden");
   }
   else{
     $(".team-btn-area").addClass("hidden");
@@ -16,6 +17,7 @@ $(".checkbox-s").click(function () {
     $("#addTeam-form").addClass("hidden");
     $("#addTeam").removeClass("hidden");
     $("#newTeam").removeClass("hidden");
+    $(".reg-btn-area").removeClass("hidden");
   }
 });
 
