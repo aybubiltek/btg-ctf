@@ -37,7 +37,7 @@ export class Route {
         } catch (error) {
           res.status(400).json({
             status: "error",
-            data: error,
+            data: error.response.data,
           });
         }
       }
@@ -58,7 +58,7 @@ export class Route {
         } catch (error) {
           res.status(400).json({
             status: "error",
-            data: error,
+            data: error.response.data,
           });
         }
       }

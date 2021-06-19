@@ -10,7 +10,7 @@ $(".checkbox-s").click(function () {
   if ($("input#accept").is(":checked")) {
     $(".team-btn-area").removeClass("hidden");
   }
-  else{
+  else {
     $(".team-btn-area").addClass("hidden");
     $("#newTeam-form").addClass("hidden");
     $("#addTeam-form").addClass("hidden");
@@ -32,3 +32,55 @@ $("#addTeam").click(function () {
   $("#addTeam-form").removeClass("hidden");
   $("#newTeam").removeClass("hidden");
 });
+
+
+
+function sweetAlert(title, icon, text, confirmButton, cancelButton, timer) {
+  Swal.fire({
+    title: `${title}`,
+    icon: `${icon}`,
+    text: `${text}`,
+    timer: timer,
+    showConfirmButton: confirmButton,
+    showCancelButton: cancelButton
+  })
+}
+
+
+function addMember() {
+  const check = $("input[name=accept]").is(':checked');
+  var data = {
+    "name_surname": $("#name").val().trim() + " " + $("#surname").val().trim(),
+    "email": $("#email").val().trim(),
+    "isJoinCtf": Boolean(check)
+  }
+
+  let url;
+
+  if ($("#addTeam-from").hasClass("hidden")) {
+    url = "/add/team"
+    if (check) {
+      data["team"] = {}
+      data["team"]["team_name"] = $("#nTeam").val()
+    }
+  } else {
+    url = "/add/member"
+    if (check) {
+      data["team"] = {}
+      data["team"]["team_code"] = $("#aTeam").val()
+    }
+  }
+
+  $.ajax({
+    url: url,
+    type: "POST",
+    data: data
+    , success(res) {
+      sweetAlert("Kayıt Başarılı", "success", res.data.message, false, false, 1500);
+
+    }, error(res) {
+      sweetAlert("Kayıt Başarısız", "warning", res.responseJSON.data.message, false, false, 2000);
+    }
+  })
+
+}
