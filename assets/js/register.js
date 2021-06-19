@@ -59,18 +59,20 @@ function addMember() {
 
   let url;
 
-  if ($("#addTeam-from").hasClass("hidden")) {
+  if (!$("#newTeam-form").hasClass("hidden")) {
     url = "/add/team"
     if (check) {
       data["team"] = {}
       data["team"]["team_name"] = $("#nTeam").val()
     }
-  } else {
-    url = "/add/member"
+  } else if(!$("#addTeam-form").hasClass("hidden")){
+    url = "/add/memberToTeam";
     if (check) {
       data["team"] = {}
       data["team"]["team_code"] = $("#aTeam").val()
     }
+  } else{
+    url = "/add/member";
   }
 
   $.ajax({
