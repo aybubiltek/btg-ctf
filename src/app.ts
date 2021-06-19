@@ -12,6 +12,7 @@ class App {
         this.viewEngine()
         this.routeConfig()
         this.mongoSetup()
+        this.securityOptions()
     }
 
     private expressConfig = () => {
