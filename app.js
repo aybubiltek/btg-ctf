@@ -14,8 +14,13 @@ app.set("view engine", "handlebars");
 app.get("/", function (req, res) {
   res.render("site/index", {
     layout: "indexLayout",
-    title: (headerTitle = () => "AnaSayfa"),
-    cssName: (cssName1 = () => "index"),
+  });
+});
+
+
+app.get("/register", function (req, res) {
+  res.render("site/register", {
+    layout: "registerLayout",
   });
 });
 

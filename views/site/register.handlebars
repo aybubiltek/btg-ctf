@@ -1,0 +1,63 @@
+<div class="register-area">
+  <a class="logo-area" href="/">
+    <img src="static/img/BiltekCyberWhite2-min.png" alt="" />
+  </a>
+  <div class="form-area">
+    <form id="information-form">
+      <div class="input-area grid grid-2">
+        <input type="text" name="name" id="name" placeholder="İsim" />
+        <input type="text" name="surname" id="surname" placeholder="Soyisim" />
+      </div>
+      <div class="input-area">
+        <input type="email" name="email" id="email" placeholder="E-mail" />
+      </div>
+      <div class="input-area check-area">
+        <input type="checkbox" name="accept" id="accept" hidden/>
+        <div class="checkbox-s">
+          <div class="square"></div>
+          <i class="fas fa-check"></i>
+        </div>
+        <span>Yarışmaya katılacağım</span>
+      </div>
+      <div class="input-area">
+        <input
+          type="button"
+          class="form-btn"
+          name="newTeam"
+          id="newTeam"
+          value="Takım oluştur"
+          onclick="formChange('newTeam-form')"
+        />
+      </div>
+      <div class="input-area">
+        <input
+          type="button"
+          class="form-btn"
+          name="newTeam"
+          id="newTeam"
+          value="Var olan takıma katıl"
+          onclick="formChange('addTeam-form')"
+        />
+      </div>
+    </form>
+    <form id="newTeam-form" class="hid">
+      <h1>Takım oluştur</h1>
+      <div class="input-area">
+        <input type="text" name="nTeam" id="nTeam" placeholder="Takım ismi">
+      </div>
+      <div class="input-area">
+        <input type="submit" class="form-btn"  name="register" value="Kayıt Ol">
+      </div>
+    </form>
+    <form id="addTeam-form" class="hid">
+      <h1>Var olan takıma katıl</h1>
+      <div class="input-area">
+        <input type="text" name="aTeam" id="aTeam" placeholder="Takım kodu">
+      </div>
+      <div class="input-area">
+       
+        <input type="submit" class="form-btn" name="register" value="Kayıt Ol">
+      </div>
+    </form>
+  </div>
+</div>
