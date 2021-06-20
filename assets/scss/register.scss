@@ -28,6 +28,9 @@ body{
         .form-area{
             width: 100%;
             margin-top: 150px;
+            @media (max-width: 500px) {
+                margin-top: 70px;
+            }
             form{
 
                 &.hid{
@@ -55,6 +58,20 @@ body{
                         input:last-child{
                             margin-left: 10px;
                             width: auto;
+                        }
+
+                        &.grid-2{
+                            @media (max-width:475px) {
+                                grid-template-columns: repeat(1, 1fr);
+
+                                input{
+                                    margin: 0;
+
+                                    &:last-child{
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

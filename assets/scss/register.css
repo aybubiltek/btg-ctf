@@ -456,6 +456,12 @@ body .register-area .form-area {
   margin-top: 150px;
 }
 
+@media (max-width: 500px) {
+  body .register-area .form-area {
+    margin-top: 70px;
+  }
+}
+
 body .register-area .form-area form.hid {
   display: none;
 }
@@ -489,6 +495,19 @@ body .register-area .form-area form .input-area.grid input:first-child {
 body .register-area .form-area form .input-area.grid input:last-child {
   margin-left: 10px;
   width: auto;
+}
+
+@media (max-width: 475px) {
+  body .register-area .form-area form .input-area.grid.grid-2 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  body .register-area .form-area form .input-area.grid.grid-2 input {
+    margin: 0;
+  }
+  body .register-area .form-area form .input-area.grid.grid-2 input:last-child {
+    margin-top: 10px;
+  }
 }
 
 body .register-area .form-area form input {
