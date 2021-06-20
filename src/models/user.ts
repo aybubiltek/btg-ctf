@@ -15,7 +15,7 @@ export class User{
     name_surname:string
 
     @IsBoolean()
-    isJoinWebinar:boolean
+    isJoinCtf:boolean
 
     @ValidateNested()
     team:Team

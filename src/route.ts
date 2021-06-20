@@ -37,14 +37,14 @@ export class Route {
         } catch (error) {
           res.status(400).json({
             status: "error",
-            data: error,
+            data: error.response.data,
           });
         }
       }
     );
 
     this.route.post(
-      "/add/member",
+      "/add/memberToTeam",
       async (req: express.Request, res: express.Response) => {
         try {
           const result = await axios.put(
@@ -58,11 +58,29 @@ export class Route {
         } catch (error) {
           res.status(400).json({
             status: "error",
-            data: error,
+            data: error.response.data,
           });
         }
       }
     );
+
+    this.route.post("/add/member", async (req: express.Request, res: express.Response) => {
+        try {
+            const result = await axios.post(
+              "http://localhost:4445/ctf/member",
+              req.body
+            );
+            res.status(200).json({
+              status: "success",
+              data: result.data,
+            });
+          } catch (error) {
+            res.status(400).json({
+              status: "error",
+              data: error.response.data,
+            });
+          }
+    })
 
     return this.route;
   };
