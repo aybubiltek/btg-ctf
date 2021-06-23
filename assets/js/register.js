@@ -80,7 +80,7 @@ function addMember() {
     type: "POST",
     data: data
     , success(res) {
-      sweetAlert("Kayıt Başarılı", "success", res.data.message, false, false, 1500);
+      sweetAlert("Kayıt Başarılı", "success", res.data.message, false, false, 5000);
 
     }, error(res) {
       sweetAlert("Kayıt Başarısız", "warning", res.responseJSON.data.message, false, false, 2000);
