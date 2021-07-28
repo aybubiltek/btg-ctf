@@ -198,6 +198,64 @@ section#btg .flex .img-area img {
   }
 }
 
+section#award .container .content .award-area {
+  margin-top: 100px;
+}
+
+section#award .container .content .award-area .award-card {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  section#award .container .content .award-area .award-card {
+    margin: 15px 0;
+  }
+  section#award .container .content .award-area .award-card.award-1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  section#award .container .content .award-area .award-card.award-2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  section#award .container .content .award-area .award-card.award-3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+section#award .container .content .award-area .award-card.award-1 img {
+  width: 80%;
+}
+
+section#award .container .content .award-area .award-card.award-2 img {
+  width: 100%;
+}
+
+section#award .container .content .award-area .award-card.award-3 img {
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  section#award .container .content .grid.grid-3 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 section#process {
   background-color: var(--bg-2);
 }
@@ -429,7 +487,8 @@ section#sponsors .content .flex .s-logo-box:hover img {
           filter: none;
 }
 
-section#sponsors .content .flex .s-logo-box .star, section#sponsors .content .flex .s-logo-box .info {
+section#sponsors .content .flex .s-logo-box .star,
+section#sponsors .content .flex .s-logo-box .info {
   position: absolute;
   left: 50%;
   bottom: 0;
