@@ -78,12 +78,18 @@ function addMember() {
   $.ajax({
     url: url,
     type: "POST",
-    data: data
+    data: data,
+    beforeSend: function(){
+        $('#loader').removeClass('hidden')
+    }
     , success(res) {
       sweetAlert("Kayıt Başarılı", "success", res.data.message, false, false, 1500);
 
     }, error(res) {
       sweetAlert("Kayıt Başarısız", "warning", res.responseJSON.data.message, false, false, 2000);
+    },
+    complete(res){
+      $('#loader').addClass('hidden')
     }
   })
 
