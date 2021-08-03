@@ -365,7 +365,7 @@ a {
   overflow-y: scroll;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
-  padding: 0  20px;
+  padding: 0 20px;
 }
 
 .modal-area .modal .content p {
@@ -412,5 +412,75 @@ a {
   .modal-area {
     height: 700px;
   }
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+table thead tr {
+  background-color: var(--text);
+}
+
+table thead tr th {
+  text-align: left;
+  color: var(--text-2);
+  padding: 10px;
+}
+
+table thead tr th:nth-child(1) {
+  border-radius: 10px 0 0 10px;
+}
+
+table thead tr th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+table tbody tr td {
+  padding: 10px;
+}
+
+table tbody tr td.hour {
+  font-weight: bold;
+}
+
+table tbody tr td span {
+  font-size: 12px;
+}
+
+table tbody tr td.date {
+  font-weight: bold;
+  color: var(--pink);
+}
+
+table tbody tr td.date2 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  width: 1px;
+  font-weight: bold;
+  word-break: break-word;
+  color: var(--pink);
+  text-align: center;
+}
+
+table tbody tr.ctf-start {
+  background-color: var(--pink);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+table tbody tr.ctf-start td:nth-child(1) {
+  border-radius: 10px 0 0 10px;
+}
+
+table tbody tr.ctf-start td:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+table tbody tr.ctf-start td.hour {
+  text-align: left;
 }
 /*# sourceMappingURL=index.css.map */
