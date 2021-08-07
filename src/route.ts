@@ -1,5 +1,7 @@
 import express from "express";
 import axios from "axios";
+import scores from "../helpers/scores.json";
+
 export class Route {
   protected route: express.Router;
 
@@ -23,10 +25,18 @@ export class Route {
     });
 
     this.route.get("/scoreboard", (req,res)=>{
+      //console.log(scores)
+      /*var sortableArray = Object.entries(scores);
+      var sortedArray = sortableArray.sort(([, a], [, b]) => a - b);
+      var deneme = sortableArray.reverse()*/
+      
+      console.log(scores)
       res.render("site/score",{
-        layout:"indexLayout",
-        title:"ScoreBoard"
+        layout:"registerLayout",
+        title:"ScoreBoard",
+        data:scores
       })
+     
     })
 
     this.route.post(

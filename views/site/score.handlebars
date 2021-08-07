@@ -11,12 +11,14 @@
                 </tr>
             </thead>
             <tbody>
+                {{#each data}}
                 <tr>
-                    <td class="hour">13.30 - 13.45</td>
-                    <td>Kağan IŞILDAK</td>
-                    <td>Malwation <span><i>(Co-Founder)</i></span></td>
-                    <td>Açılış Konuşması</td>
+                    <td></td>
+                    <td>{{@index}}</td>
+                    <td>{{@key}}</td>
+                    <td>{{@this}}</td>
                 </tr>
+                {{/each}}
             </tbody>
         </table>
         </div>
