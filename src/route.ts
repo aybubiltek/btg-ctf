@@ -22,6 +22,13 @@ export class Route {
       });
     });
 
+    this.route.get("/scoreboard", (req,res)=>{
+      res.render("site/score",{
+        layout:"indexLayout",
+        title:"ScoreBoard"
+      })
+    })
+
     this.route.post(
       "/add/team",
       async (req: express.Request, res: express.Response) => {
