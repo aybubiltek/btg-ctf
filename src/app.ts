@@ -23,7 +23,13 @@ class App {
 
     private viewEngine = () => {
         this.app.use("/static", express.static("./assets"))
-        this.app.engine("handlebars", exphbs())
+        this.app.engine("handlebars", exphbs({
+            helpers:{
+                sum: function(x: any) {
+                    return x+1;
+                }
+            }
+        }))
         this.app.set("view engine", "handlebars")
     }
 
