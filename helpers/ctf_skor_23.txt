@@ -7,7 +7,7 @@ Takım Adı: help2fenrir, Puanı: 0
 Takım Adı: Team of Freshman, Puanı: 0 
 Takım Adı: Bireysel, Puanı: 0 
 Takım Adı: JustMe, Puanı: 225 
-Takım Adı: lahmacun, Puanı: 690 
+Takım Adı: lahmacun, Puanı: 960 
 Takım Adı: Cymer, Puanı: 0 
 Takım Adı: Nano, Puanı: 0 
 Takım Adı: çıkınçıkıngelin, Puanı: 0 
@@ -29,7 +29,7 @@ Takım Adı: p4l, Puanı: 0
 Takım Adı: null, Puanı: 410 
 Takım Adı: DEF, Puanı: 0 
 Takım Adı: 3rk1n, Puanı: 0 
-Takım Adı: BortecineSec, Puanı: 510 
+Takım Adı: BortecineSec, Puanı: 660 
 Takım Adı: f2u0a0d3, Puanı: 250 
 Takım Adı: memnunedemiorzu, Puanı: 0 
 Takım Adı: hackreal, Puanı: 0 
@@ -107,7 +107,7 @@ Takım Adı: SiberKovan, Puanı: 0
 Takım Adı: X3-ZEDS, Puanı: 240 
 Takım Adı: Toman, Puanı: 0 
 Takım Adı: Tirnakcilar, Puanı: 0 
-Takım Adı: Comic-19, Puanı: 125 
+Takım Adı: Comic-19, Puanı: 210 
 Takım Adı: SoftSec, Puanı: 350 
 Takım Adı: Kardeşler APT, Puanı: 610 
 Takım Adı: anime kızları gerçektir, Puanı: 125 
@@ -121,7 +121,6 @@ Takım Adı: CyberEru, Puanı: 100
 Takım Adı: Parthenia, Puanı: 0 
 Takım Adı: cay.icek.mi, Puanı: 510 
 Takım Adı: Hunt3rSt4r, Puanı: 225 
-Takım Adı: Hex2Text, Puanı: 450 
+Takım Adı: Hex2Text, Puanı: 600 
 Takım Adı: AteşSuToprakTahta, Puanı: 530 
 Takım Adı: f8warriors, Puanı: 410 
-Takım Adı: aybutest, Puanı: 325 
