@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="area">
+ <div class="info-area">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Sıralama</th>
+                    <th>Takım Adı</th>
+                    <th>Puan</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each data}}
+                <tr>
+                    <td></td>
+                    <td>{{sum @index}}</td>
+                    <td>{{@key}}</td>
+                    <td>{{@this}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
